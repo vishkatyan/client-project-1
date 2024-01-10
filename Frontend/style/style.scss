@@ -1,0 +1,153 @@
+//variables
+$primary: #fff;
+$secondary: #000;
+$Tertiary:rgb(213, 147, 16);
+//fonts
+
+*{
+margin: 0;
+padding: 0;  
+box-sizing: border-box;
+}
+
+//navbar styling
+nav{
+    header{
+        position: fixed !important;
+        height: 60px;
+        width: 100%;
+        //to blue the navbar background :
+
+        // background: transparent;
+        // backdrop-filter: blur(10px);
+
+        background-color: $primary;
+        .logo{
+            img{
+                height: 50px;
+                padding-top: 8px;
+                margin-right: auto;
+                margin-left: 150px;
+            }
+        }
+        .links{
+            ul{
+                display: flex;
+                text-align: center;
+                justify-content: center;
+                gap: 20px;
+                margin-top: -32px;
+                li{
+                    list-style: none;
+                    display: block;
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: 700;
+                    a{
+                        text-decoration: none;
+                        color: $secondary;
+                    } :hover{
+                        color: $Tertiary;
+                        // opacity: .5;
+
+                    }
+                }
+            }
+        }
+    } 
+}
+
+//hero section carousel styling
+.hero{
+    .carousel{
+        .image{
+            img{ 
+            width: 100%;
+            height: 750px;
+            }
+        }
+        
+    }
+}
+
+//about section styling
+.about{
+    height: 500px;
+    h1{
+        text-align: center;
+        padding: 25px;
+        font-size: 30px;
+        color: $Tertiary;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .left{
+        p{
+            width: 500px;
+            padding: 15px;
+            margin-left: 160px;
+        }
+
+    }
+    .right{
+        img{
+            float: right;
+            margin-right: 150px;
+            margin-top: -250px;
+            height: 360px;
+        }
+    }
+}
+
+
+//testimonial section styling
+.container{
+    height: 380px;
+    background-color: $Tertiary;
+    h1{
+        text-align: center;
+        font-size: 30px;
+        font-family: 'Montserrat', sans-serif;
+        padding: 20px;
+        color: $primary;
+    }
+    .cards{
+        display: flex;
+        justify-content: space-between;
+        margin-left: 80px;
+        margin-right: 80px;
+        .card{
+            img{
+                height: 200px;
+                border-radius: 20px;
+            }
+            figcaption{
+                width: 200px;
+                color: $primary;
+            }
+        }
+    }
+
+}
+
+//footer styling
+footer{
+    text-align: center;
+    background-color: $secondary;
+    padding: 15px;
+    .links{
+        a{
+            font-family: 'Montserrat', sans-serif;
+            padding: 6px;
+            font-size: 15px;
+            text-decoration: none;
+            color: $primary;
+        }
+        :hover{
+            color: $Tertiary;
+        }
+    }
+    p{
+        margin-top: 10px;
+        font-family: 'Montserrat', sans-serif;
+        color: $primary;
+    }
+}
